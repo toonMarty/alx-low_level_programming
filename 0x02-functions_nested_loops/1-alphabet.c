@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet function name
+ * print_alphabet - Entry point
  *
  * Return nothing void does not have a return value
  * @brief function prints alphabet in lower case
