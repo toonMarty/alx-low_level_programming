@@ -1,17 +1,21 @@
 #include "main.h"
 /**
- * main - Entry point
+ * _islower - Entry point
  *
- * Return: Always 0 (Success)
+ * param int
+ *
+ * Return: 1 (Success)
+ *
+ * Return: 0 (Failure)
  */
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 	{
-		return 1;
+		return (1);
 	}
 	else
 	{
-		return 0;
+		return (0);
 	}
 }
