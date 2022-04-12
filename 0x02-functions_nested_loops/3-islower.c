@@ -2,11 +2,10 @@
 /**
  * _islower - Entry point
  *
- * param int
+ * c - parameter
  *
- * Return: 1 (Success)
+ * Return: 1 (Success) or 0 (Failure)
  *
- * Return: 0 (Failure)
  */
 int _islower(int c)
 {
