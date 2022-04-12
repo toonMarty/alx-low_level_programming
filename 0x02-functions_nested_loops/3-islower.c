@@ -2,7 +2,7 @@
 /**
  * _islower - Entry point
  *
- * c: a number that translates to an ASCII character
+ * @c: a number that translates to an ASCII character
  *
  * Return: 1 (Success) or 0 (Failure)
  *
