@@ -6,3 +6,17 @@
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putchar(char c);
+
+void print_alphabet(void)
+{
+	char a = 'a';
+
+	while(a <= 'z')
+	{
+		_putchar(a);
+		a++;
+	}
+	putchar('\n');
+
+	return (0);
+}
