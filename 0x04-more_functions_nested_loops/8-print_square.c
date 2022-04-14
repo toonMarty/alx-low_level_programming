@@ -13,7 +13,7 @@ _putchar('\n');
 else
 {
 int i = 0;
-while(i < n)
+while (i < n)
 {
 int j = 0;
 while (j < n)
