@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isupper - Entry point
+ * _isupper - Function that checks whether an ASCII character isuppercase
  *
  * @c: an integer which corresponds to an ASCII character which is an uppercase letter
  *
