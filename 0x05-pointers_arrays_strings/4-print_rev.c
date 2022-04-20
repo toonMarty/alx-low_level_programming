@@ -11,13 +11,19 @@ int _strlen(char *s)
 {
 char *cp;
 cp = s;
-while(*cp++)
+
+while (*cp++)
 {
 continue;
 }
 
-return (cp-s-1);
+return (cp - s - 1);
 }
+/**
+ * print_rev - Entry point
+ * @s: string
+ * Return: nothing
+ */
 void print_rev(char *s)
 {
 int len = _strlen(s);
@@ -27,5 +33,4 @@ for (i = len; i >= 0; i--)
 {
 printf("%c", *(s+i));
 }
-_putchar('\n');
 }
