@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_rev - Entry point
+ * _strlen - Entry point
  *
  * @s: string
  *
- * Return: nothing
+ * Return: length of string
  */
 int _strlen(char *s)
 {
@@ -31,6 +31,6 @@ int i;
 
 for (i = len; i >= 0; i--)
 {
-printf("%c", *(s+i));
+printf("%c", *(s + i));
 }
 }
