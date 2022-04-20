@@ -25,9 +25,19 @@ void puts_half(char *str)
 {
 int len = _strlen(str);
 int i;
+if (len % 2 != 0)
+{
 for (i = len / 2; i < len; i++)
 {
 printf("%c", *(str + i));
+}
+}
+else
+{
+for (i = len / 2; i < len; i++)
+{
+printf("%c", *(str + i));
+}
 }
 putchar('\n');
 }
