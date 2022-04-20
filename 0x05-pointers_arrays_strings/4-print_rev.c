@@ -30,7 +30,7 @@ int len = _strlen(s);
 int i;
 for (i = len - 1; i >= 0; --i)
 {
-printf("%c", *(s+i));
+printf("%c", *(s + i));
 }
 putchar('\n');
 }
