@@ -7,7 +7,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-char *ptr = destination;
+char *ptr = dest;
 
 if (dest == NULL)
 {
