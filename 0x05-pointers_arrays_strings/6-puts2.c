@@ -18,7 +18,7 @@ return (cp - s - 1);
 }
 /**
  * puts2 - Entry point
- *
+ * @str: the string from which to print
  * Return: nothing
  */
 void puts2(char *str)
