@@ -1,9 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * _strcpy - Function that copies a string
+ * @dest: String to copy to
+ * @src: String to copy from
+ * Return: NULL if destination is null otherwise return ptr to dest, copy of src
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -11,7 +12,7 @@ char *ptr = dest;
 
 if (dest == NULL)
 {
-return NULL;
+return (NULL);
 }
 
 while (*src != '\0')
@@ -23,5 +24,5 @@ src++;
 
 *dest = '\0';
 
-return ptr;
+return (ptr);
 }
