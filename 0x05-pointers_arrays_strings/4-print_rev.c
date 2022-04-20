@@ -7,6 +7,17 @@
  *
  * Return: nothing
  */
+int _strlen(char *s)
+{
+char *cp;
+cp = s;
+while(*cp++)
+{
+continue;
+}
+
+return (cp-s-1);
+}
 void print_rev(char *s)
 {
 int len = _strlen(s);
