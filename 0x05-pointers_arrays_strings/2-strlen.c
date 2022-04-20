@@ -14,5 +14,5 @@ while (*cptr++)
 {
 continue;
 }
-return cptr - s - 1;
+return (cptr - s - 1);
 }
