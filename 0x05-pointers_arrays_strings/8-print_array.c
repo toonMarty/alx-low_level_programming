@@ -14,7 +14,7 @@ int i;
 
 for (i = 0; i < n; i++)
 {
-if (i <= 4 && i != 0)
+if (i < n && i != 0)
 {
 printf(", ");
 }
