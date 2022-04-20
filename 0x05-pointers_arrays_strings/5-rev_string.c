@@ -24,8 +24,9 @@ return (cp - s - 1);
 void rev_string(char *s)
 {
 int len = _strlen(s);
+int i;
 
-for (int i = len; i >= 0;i--)
+for (i = len; i >= 0; i--)
 {
 printf("%c", *(s + i));
 }
