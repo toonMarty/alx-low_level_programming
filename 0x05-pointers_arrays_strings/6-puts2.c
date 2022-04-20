@@ -26,9 +26,12 @@ void puts2(char *str)
 int len = _strlen(str);
 int i;
 
-for (i = 0; i < len / 2; i++)
+for (i = 0; i < len; i++)
+{
+if (i % 2 == 0)
 {
 printf("%c", *(str + i));
+}
 }
 putchar('\n');
 }
