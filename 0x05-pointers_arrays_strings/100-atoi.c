@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * _atoi - Function that converts string to integer
- * @s: the string 
+ * @s: the string
  * Return: an integer
  */
 int _atoi(char *s)
