@@ -9,20 +9,19 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-char *ptr = dest;
-
-if ((dest == NULL) && (src == NULL))
+if (n != 0)
 {
-return (NULL);
-}
+char *d = dest;
+char *s = src;
 
-while (*src && n--)
+do {
+if ((*d++ = *s++) == 0)
 {
-*dest = *src;
-dest++;
-src++;
+while (--n != 0)
+*d++ = 0;
+break;
 }
-*dest = '\0';
-
-return (ptr);
+} while (--n != 0);
+}
+return (dest);
 }
