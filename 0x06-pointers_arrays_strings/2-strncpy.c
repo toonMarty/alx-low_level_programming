@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strncpy - Copies a string
  * @dest: destination string
