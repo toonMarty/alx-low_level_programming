@@ -5,3 +5,4 @@ void reverse_array(int *a, int n);
 void swap(int *a, int *b);
 char *string_toupper(char *);
 char *_strncat(char *dest, char *src, int n);
+char *cap_string(char *);
