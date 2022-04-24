@@ -15,8 +15,8 @@ char *d = dest;
 char *s = src;
 char *a;
 do {
-*a = *d++ = *s++;
-if (*a == 0)
+
+if ((*d++ = *s++) == 0)
 {
 while (--n != 0)
 *d++ = 0;
