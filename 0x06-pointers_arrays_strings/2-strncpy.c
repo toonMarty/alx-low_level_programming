@@ -13,9 +13,10 @@ if (n != 0)
 {
 char *d = dest;
 char *s = src;
-
+char *a;
 do {
-if ((*d++ = *s++) == 0)
+*a = *d++ = *s++;
+if (*a == 0)
 {
 while (--n != 0)
 *d++ = 0;
