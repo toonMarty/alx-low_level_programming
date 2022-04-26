@@ -14,7 +14,7 @@ while (s[i])
 {
 i++;
 }
-for (j = 0; j <= a; j++)
+for (j = 0; j <= i; j++)
 {
 if (c == s[j])
 {
