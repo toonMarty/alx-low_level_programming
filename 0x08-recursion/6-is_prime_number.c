@@ -11,7 +11,7 @@ if (n < 2)
 return (0);
 if (n < 4)
 return (1);
-return (prime(n, 2));
+return (_prime(n, 2));
 }
 /**
  * _sqrt - returns sqrt of number
@@ -43,12 +43,12 @@ if (n % j == 0)
 {
 return (0);
 }
-else if (prime(n, 1) < j)
+else if (_prime(n, 1) < j)
 {
 return (1);
 }
 else
 {
-return (prime(n, j + 1));
+return (_prime(n, j + 1));
 }
 }
