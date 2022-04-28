@@ -9,3 +9,5 @@ int findsqrt(int n, int i);
 int is_prime_number(int n);
 int _sqrt(int n, int i);
 int _prime(int n, int j);
+int get_len(char *s);
+int palindrome(char *s, int l);
