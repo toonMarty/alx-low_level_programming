@@ -11,3 +11,4 @@ int _sqrt(int n, int i);
 int _prime(int n, int j);
 int get_len(char *s);
 int palindrome(char *s, int l);
+int wildcmp(char *s1, char *s2);
