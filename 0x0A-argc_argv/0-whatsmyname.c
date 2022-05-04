@@ -1,13 +1,18 @@
 #include <stdio.h>
+#include "main.h"
+
+
 /**
- * main - Entry point
- * @argc: argument count
- * @argv: argument vector
- * Return: Always 0 (Success)
- */
+* main - print name of program
+* @argc: argument counter
+* @argv: pointer to array of arguments
+* Return: 0 on success
+*/
+
 int main(int argc, char *argv[])
 {
-printf("%s", argv[0]);
-printf("\n");
+if (argc > 0)
+printf("%s\n", argv[0]);
+
 return (0);
 }
