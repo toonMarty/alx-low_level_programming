@@ -30,6 +30,4 @@ if (cPtr == NULL)
 return (NULL);
 }
 return (cPtr);
-
-free(cPtr);
 }
