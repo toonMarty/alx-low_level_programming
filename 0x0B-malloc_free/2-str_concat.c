@@ -10,16 +10,31 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int len1 = strlen(s1), len2 = strlen(s2);
-	char *concat = malloc((sizeof(char) * (len1 + len2 + 1)));
+	unsigned int i, j, k, l;
+	char *s;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
+		i = 0;
+	else
 	{
-		return ("");
+		for (i = 0; s1[i]; i++)
+			;
 	}
-	memcpy(concat, s1, len1);
-	memcpy(concat + len1, s2, len2 + 1);
-	return (concat);
-
-	free(concat);
+	if (s2 == NULL)
+		j = 0;
+	else
+	{
+		for (j = 0; s2[j]; j++)
+			;
+	}
+	k = i + j + 1;
+	s = malloc(k * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	for (l = 0; l < i; l++)
+		s[l] = s1[l];
+	for (l = 0; l < j; l++)
+		s[l + i] = s2[l];
+	s[i + j] = '\0';
+	return (s);
 }
