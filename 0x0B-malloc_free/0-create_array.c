@@ -27,7 +27,7 @@ return (NULL);
 
 if (cPtr == NULL)
 {
-printf("Failed to allocate memory\n");
+return (NULL);
 }
 return (cPtr);
 
