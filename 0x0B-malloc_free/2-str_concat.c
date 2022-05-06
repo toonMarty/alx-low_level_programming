@@ -15,7 +15,7 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL || s2 == NULL)
 	{
-		return (0);
+		return ("");
 	}
 	memcpy(concat, s1, len1);
 	memcpy(concat + len1, s2, len2 + 1);
