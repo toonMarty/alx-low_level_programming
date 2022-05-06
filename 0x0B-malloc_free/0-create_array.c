@@ -11,9 +11,14 @@
 char *create_array(unsigned int size, char c)
 {
 char *cPtr;
+int i;
 
 cPtr = malloc(size * sizeof(char));
-cPtr[0] = c;
+
+for (i = 0; i < size; i++)
+{
+cPtr[i] = c;
+}
 
 if (size == 0)
 {
