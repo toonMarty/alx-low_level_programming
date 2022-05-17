@@ -15,16 +15,8 @@ va_start(va, n);
 
 for (counter  = 0; counter < n; counter++)
 {
-printf("%d", va_arg(va, int));
-
-if (separator && counter != n - 1)
-{
-printf("%s", separator);
-}
-else
-{
-"";
-}
+printf("%d%s", va_arg(va, int),
+		(separator && counter != n - 1) ? separator : "");
 }
 
 va_end(va);
