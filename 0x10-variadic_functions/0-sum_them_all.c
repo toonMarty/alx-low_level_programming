@@ -19,8 +19,8 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-int sum = 0;
-int counter;
+unsigned int sum = 0;
+unsigned int counter;
 va_list va;
 
 if (n == 0)
