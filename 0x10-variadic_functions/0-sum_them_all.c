@@ -19,21 +19,25 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int sum = 0;
-unsigned int counter;
-va_list va;
+	unsigned int sum = 0;
+	unsigned int counter;
+	va_list va;
 
-if (n == 0)
-return (0);
+	va_start(va, n);
 
-va_start(va, n);
+	for (counter = 0; counter < n; counter++)
+	{
+		if (n == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			sum += va_arg(va, int);
+		}
+	}
 
-for (counter = 0; counter < n; counter++)
-{
-sum += va_arg(va, int);
-}
+	va_end(va);
 
-va_end(va);
-
-return (sum);
+	return (sum);
 }
