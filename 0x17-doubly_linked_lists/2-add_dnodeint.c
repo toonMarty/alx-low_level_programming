@@ -6,9 +6,9 @@
  * @n: integer to be added
  * Return: address of node added
  */
-listint_t *add_dnodeint(listint_t **head, const int n)
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	listint_t *newNode = malloc(sizeof(listint_t));
+	dlistint_t *newNode = malloc(sizeof(dlistint_t));
 
 	if (!head || !newNode)
 		return (NULL);
