@@ -1,8 +1,10 @@
 CC = gcc
-SRC = $(wildcard *.c)
-OBJ = $(wildcard *.o)
-NAME = $(wildcard *.c)
-FLAG = -c
+SRC := $(wildcard *.c)
+OBJ := $(SRC:%.c=%.o)
+NAME := $(SRC:%c=%)
 
-all: ${NAME} 
-	${CC} ${FLAG} ${SRC} -o ${OBJ}
+all: ${OBJ} 
+
+%.o: %.c
+	${CC} -c -o $@ $<
+
