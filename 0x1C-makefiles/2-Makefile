@@ -1,0 +1,8 @@
+CC = gcc
+SRC = $(wildcard *.c)
+OBJ = $(wildcard *.o)
+NAME = $(wildcard *.c)
+FLAG = -c
+
+all: ${NAME} 
+	${CC} ${FLAG} ${SRC} -o ${OBJ}
