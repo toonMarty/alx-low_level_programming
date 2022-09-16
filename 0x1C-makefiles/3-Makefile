@@ -4,12 +4,12 @@ CC = gcc
 SRC = main.c school.c
 OBJ = ${SRC:%.c=%.o}
 NAME = school
-RM = rm -f ${OBJ} $(wildcard *.swp) ${NAME}
+RM = rm -f ${OBJ} $(wildcard *~) ${NAME}
 
 all: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
 clean:
-	rm -f $(wildcard *.swp) ${NAME}
+	rm -f $(wildcard *~) ${NAME}
 oclean:
 	rm -f ${OBJ}
 fclean:
@@ -17,3 +17,5 @@ fclean:
 
 re: ${OBJ}
 	${CC} ${OBJ} -o ${NAME}
+
+
