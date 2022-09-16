@@ -1,15 +1,7 @@
 CC = gcc
-
 SRC := $(wildcard *.c)
 OBJ := $(SRC:%.c=%.o)
 NAME := school
 
-all: ${BINS}
-	${CC} ${OBJ} -o ${NAME}
-
-${NAME}: %.o
-	${CC} -lm $< -o $@
-
-%.o: %.c
+all: ${OBJ}
 	${CC} -c -o $@ $<
-
